@@ -27,15 +27,11 @@
             <version>5.1.31</version>
         </dependency>
 
-
-
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-graphx_2.10</artifactId>
             <version>1.6.0</version>
         </dependency>
-
-
 
         <dependency>
             <groupId>com.typesafe</groupId>
@@ -105,6 +101,5 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.58</version>
         </dependency>
-
     </dependencies>
 </project>
