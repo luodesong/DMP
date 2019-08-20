@@ -5,6 +5,9 @@ import java.util.Properties
 import org.apache.spark.sql.{DataFrame, SQLContext, SaveMode}
 import org.apache.spark.{SparkConf, SparkContext}
 
+/**
+  * 统计各省市数据量分布情况
+  */
 object Data2JsonAndMysql {
     def main(args: Array[String]): Unit = {
         //判断路径
