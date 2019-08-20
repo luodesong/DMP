@@ -1,8 +1,8 @@
-package com.ETL
+package com.etl
 
-import com.util.Util2Type
+import com.util.{SchemaUtil, Util2Type}
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql.{Row, SQLContext}
+import org.apache.spark.sql.{DataFrame, Row, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
 object Txt2Parquet {
@@ -33,7 +33,7 @@ object Txt2Parquet {
         //安要求切割数据，并且保证数据的长度大于定于85,-1的作用是保证相同切割条件的数据的重复，加上了-1才能保证数据的准确性：，，，，，，，，会当成一个字符切割
         val logsRDD: RDD[Array[String]] = lines.map(_.split(",", -1)).filter(_.length >= 85)
 
-        logsRDD.map(arr => {
+        val rowRDD: RDD[Row] = logsRDD.map(arr => {
             Row(
                 arr(0),
                 Util2Type.toInt(arr(1)),
@@ -123,7 +123,12 @@ object Txt2Parquet {
             )
         })
 
-        //构建
+        //构建DataFrame
+        val df: DataFrame = sqlContext.createDataFrame(rowRDD, SchemaUtil.getSchemal)
+
+        //存储为parquet文件
+        df.write.parquet(outputPath)
+
         sc.stop()
 
     }
