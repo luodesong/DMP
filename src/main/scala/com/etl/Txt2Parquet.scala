@@ -5,6 +5,10 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, Row, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
+/**
+  * 这是将日志文件洗成spark的默认paquet格式
+  *     paquet是一个列式存储格式
+  */
 object Txt2Parquet {
     def main(args: Array[String]): Unit = {
         //判断路径
