@@ -5,6 +5,7 @@ import org.apache.spark.sql.{DataFrame, SQLContext, SaveMode}
 import org.apache.spark.{SparkConf, SparkContext}
 
 /**
+  * 统计各省市数据量分布情况
   * inputPath: E:\Test-workspace\testSpark\input\project\DMP
   * outputPath: hdsf://min1:8020/sparktest/procity
   */
@@ -24,24 +25,33 @@ object Data2HdfsSparkCore {
 
         val sc: SparkContext = new SparkContext(conf)
 
+        //创建sparkSql的上下文
         val sqlContext: SQLContext = new SQLContext(sc)
         import sqlContext.implicits._
 
-        //val Array(inputPath, outputPath) = args
         val logsRDD: RDD[String] = sc.textFile(inputPath)
 
+        //将省份和城市拼接成key-value对儿
         val prAndCityRDD: RDD[(String, Int)] = logsRDD.map(_.split(",", -1)).filter(_.length >= 85).map(x => {
             (x(24) + "," + x(25), 1)
         })
+
+        //分组求出每个省市的数据
         val proAndCityReduceRDD: RDD[(String, Int)] = prAndCityRDD.reduceByKey(_ + _)
 
+        //创建DataFream
         val ansRDD: RDD[ProAndCity] = proAndCityReduceRDD.map(x => {
             val strings: Array[String] = x._1.split(",")
             ProAndCity(x._2, strings(0), strings(1))
         })
         val ansDF: DataFrame = ansRDD.toDF()
 
-
+        //将数据写入hdfs文件系统
+        /**
+          * partitionBy("provincename", "cityname")：按照省份和城市分区
+          *     相同省份分一个区
+          *         相同城市分一个区
+          */
         ansDF.write.partitionBy("provincename", "cityname").mode(SaveMode.Append).json(outputPath )
 
         println(proAndCityReduceRDD.collect().toBuffer)

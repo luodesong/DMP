@@ -5,6 +5,8 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 /**
   * 统计各省市数据量分布情况
+  *     inputPath：E:\Test-workspace\testSpark\output\project\DMP\parquet
+  *     outputPath：E:\Test-workspace\testSpark\output\project\DMP\json
   */
 object Data2Json {
     def main(args: Array[String]): Unit = {
@@ -38,9 +40,9 @@ object Data2Json {
         val ansDF: DataFrame = sqlContext.sql(sqlString)
         ansDF.show()
 
-        /*
-        coalesce(1):作用是减少分区的分区器
-         */
+        /**
+          * coalesce(1):作用是减少分区的分区器
+          */
         ansDF.coalesce(1).write.mode(SaveMode.Append).json(outputPath)
 
         sc.stop()

@@ -7,6 +7,8 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 /**
   * 地域分布模块
+  *    inputPath： E:\Test-workspace\testSpark\output\project\DMP\parquet
+  *    outputPath：end()占位
   *
   */
 object LocationSparkCore {

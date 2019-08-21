@@ -11,6 +11,8 @@ import org.apache.spark.{SparkConf, SparkContext}
   *     第二个字段也就是value的值是appname的name
   *
   * 做广播变量的目的是有的appname有的时候是空的就必须得通过id来在字典变量中查找出来
+  *     inputPath：E:\Test-workspace\testSpark\input\project\DMP\dirc
+  *     outputPath：E:\Test-workspace\testSpark\output\project\DMP\appAndIp
   */
 
 object MakeDictionary {

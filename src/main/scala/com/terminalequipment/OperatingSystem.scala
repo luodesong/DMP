@@ -8,17 +8,19 @@ import org.apache.spark.sql.{DataFrame, SQLContext}
 /**
   * 终端设备
   *     操作系统
+  *     inputPath：E:\Test-workspace\testSpark\output\project\DMP\parquet
+  *     outputPath：end
   */
 object OperatingSystem {
 
     def main(args: Array[String]): Unit = {
         // 模拟企业开发模式，首先判断一下目录 是否为空
-        if (args.length != 3) {
+        if (args.length != 2) {
             println("目录不正确，退出程序！")
             sys.exit()
         }
         // 创建一个集合，存储一下输入输出目录
-        val Array(dericPath, inputPath, outputPath) = args
+        val Array(inputPath, outputPath) = args
         val conf = new SparkConf()
                 .setAppName(this.getClass.getName).setMaster("local")
                 // 处理数据，采取scala的序列化方式，性能比Java默认的高

@@ -2,26 +2,484 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fda14ca6-c40e-4557-9748-8fd8d25b2852" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/app/AppSparkCore.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/etl/MakeDictionary.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/EquipmentSparkCore.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/NetworkingMode.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/OperatingSystem.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/Operators.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/util/MakeAnsUtil.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/util/MakeTupeRddUtil.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00000-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00001-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00002-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00003-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00004-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00005-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00006-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00007-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00008-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00009-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00010-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00011-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00012-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00013-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00014-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00015-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00016-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00017-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00018-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00019-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00020-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00021-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00022-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00023-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00024-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00025-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00026-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00027-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00028-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00029-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00030-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00031-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00032-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00033-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00034-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00035-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00036-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00037-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00038-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00039-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00040-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00041-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00042-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00043-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00044-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00045-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00046-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00047-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00048-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00049-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00050-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00051-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00052-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00053-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00054-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00055-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00056-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00057-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00058-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00059-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00060-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00061-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00062-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00063-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00064-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00065-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00066-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00067-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00068-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00069-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00070-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00071-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00072-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00073-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00074-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00075-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00076-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00077-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00078-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00079-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00080-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00081-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00082-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00083-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00084-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00085-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00086-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00087-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00088-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00089-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00090-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00091-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00092-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00093-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00094-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00095-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00096-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00097-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00098-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00099-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00100-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00101-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00102-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00103-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00104-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00105-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00106-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00107-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00108-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00109-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00110-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00111-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00112-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00113-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00114-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00115-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00116-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00117-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00118-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00119-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00120-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00121-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00122-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00123-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00124-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00125-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00126-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00127-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00128-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00129-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00130-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00131-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00132-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00133-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00134-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00135-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00136-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00137-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00138-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00139-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00140-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00141-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00142-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00143-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00144-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00145-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00146-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00147-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00148-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00149-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00150-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00151-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00152-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00153-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00154-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00155-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00156-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00157-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00158-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00159-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00160-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00161-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00162-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00163-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00164-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00165-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00166-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00167-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00168-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00169-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00170-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00171-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00172-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00173-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00174-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00175-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00176-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00177-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00178-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00179-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00180-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00181-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00182-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00183-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00184-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00185-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00186-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00187-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00188-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00189-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00190-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00191-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00192-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00193-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00194-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00195-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00196-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00197-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00198-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/.part-r-00199-f5486176-949a-448e-a9de-52f09e509448.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbcPool.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00000-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/util/DBConnectionPool.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00001-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00002-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00003-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00004-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00005-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00006-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00007-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00008-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00009-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00010-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00011-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00012-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00013-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00014-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00015-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00016-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00017-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00018-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00019-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00020-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00021-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00022-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00023-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00024-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00025-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00026-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00027-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00028-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00029-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00030-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00031-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00032-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00033-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00034-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00035-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00036-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00037-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00038-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00039-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00040-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00041-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00042-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00043-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00044-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00045-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00046-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00047-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00048-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00049-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00050-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00051-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00052-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00053-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00054-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00055-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00056-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00057-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00058-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00059-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00060-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00061-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00062-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00063-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00064-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00065-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00066-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00067-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00068-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00069-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00070-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00071-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00072-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00073-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00074-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00075-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00076-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00077-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00078-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00079-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00080-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00081-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00082-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00083-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00084-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00085-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00086-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00087-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00088-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00089-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00090-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00091-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00092-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00093-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00094-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00095-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00096-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00097-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00098-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00099-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00100-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00101-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00102-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00103-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00104-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00105-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00106-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00107-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00108-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00109-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00110-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00111-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00112-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00113-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00114-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00115-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00116-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00117-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00118-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00119-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00120-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00121-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00122-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00123-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00124-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00125-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00126-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00127-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00128-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00129-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00130-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00131-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00132-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00133-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00134-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00135-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00136-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00137-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00138-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00139-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00140-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00141-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00142-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00143-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00144-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00145-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00146-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00147-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00148-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00149-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00150-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00151-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00152-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00153-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00154-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00155-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00156-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00157-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00158-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00159-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00160-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00161-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00162-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00163-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00164-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00165-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00166-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00167-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00168-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00169-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00170-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00171-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00172-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00173-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00174-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00175-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00176-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00177-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00178-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00179-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00180-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00181-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00182-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00183-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00184-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00185-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00186-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00187-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00188-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00189-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00190-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00191-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00192-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00193-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00194-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00195-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00196-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00197-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00198-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/part-r-00199-f5486176-949a-448e-a9de-52f09e509448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/app/AppSparkCore.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/app/AppSparkCore.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/etl/MakeDictionary.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/etl/MakeDictionary.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/etl/Txt2Parquet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/etl/Txt2Parquet.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/util/LocationUtil.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/util/LocationUtil.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/procityct/Data2HdfsSparkCore.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/procityct/Data2HdfsSparkCore.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Json.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Json.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Mysql.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Mysql.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/EquipmentSparkCore.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/EquipmentSparkCore.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/NetworkingMode.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/NetworkingMode.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/OperatingSystem.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/OperatingSystem.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/Operators.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/Operators.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/test/TestOne.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/test/TestOne.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppNameInfo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppNameInfo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppNameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppNameInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$2$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$2$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$3$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$3$$anonfun$apply$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/MakeDictionary$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/MakeDictionary$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/MakeDictionary$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/MakeDictionary$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/MakeDictionary$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/MakeDictionary$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/MakeDictionary$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/MakeDictionary$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/Txt2Parquet$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/Txt2Parquet$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/Txt2Parquet$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/Txt2Parquet$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/Txt2Parquet$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/Txt2Parquet$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/Txt2Parquet$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/Txt2Parquet$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$$typecreator1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/location/ProAndCity$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/ProAndCity$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/location/ProAndCity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/ProAndCity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$anonfun$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$$typecreator1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/Data2Json$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/Data2Json$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/Data2Mysql$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/Data2Mysql$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/ProAndCity$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/ProAndCity$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/ProAndCity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/ProAndCity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/util/LocationUtil$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/util/LocationUtil$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/util/LocationUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/util/LocationUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/ClientNameInfo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/ClientNameInfo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/ClientNameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/ClientNameInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/DeviceNameInfo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/DeviceNameInfo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/DeviceNameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/DeviceNameInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkMannerNameInfo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkMannerNameInfo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkMannerNameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkMannerNameInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatorsNameInfo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatorsNameInfo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatorsNameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatorsNameInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/util/MakeAnsUtil$$anonfun$getAns$1$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/util/MakeAnsUtil$$anonfun$getAns$1$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/util/MakeAnsUtil$$anonfun$getAns$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/util/MakeAnsUtil$$anonfun$getAns$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/util/MakeAnsUtil$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/util/MakeAnsUtil$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/util/MakeTupeRddUtil$$anonfun$getTupes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/util/MakeTupeRddUtil$$anonfun$getTupes$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/util/MakeTupeRddUtil$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/util/MakeTupeRddUtil$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/TestOne$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/TestOne$.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,43 +509,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/LocationUtil.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2Json.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/etl/MakeDictionary.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+            <state relative-caret-position="44">
+              <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
               <folding>
-                <element signature="e#17#48#0" expanded="true" />
+                <element signature="e#23#84#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/app/AppSparkCore.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="968">
-              <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="21" />
-              <folding>
-                <element signature="e#22#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/etl/Txt2Parquet.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="103">
+              <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
               <folding>
                 <element signature="e#17#56#0" expanded="true" />
               </folding>
@@ -96,10 +533,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/MakeAnsUtil.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/LocationUtil.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+            <state relative-caret-position="62">
+              <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbcPool.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2HdfsSparkCore.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+              <folding>
+                <element signature="e#23#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/terminalequipment/EquipmentSparkCore.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+              <folding>
+                <element signature="e#31#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/DBConnectionPool.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-154">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="45" />
+              <folding>
+                <element signature="e#19#62#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,7 +594,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/MakeTupeRddUtil.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="282">
               <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
               <folding>
                 <element signature="e#18#49#0" expanded="true" />
@@ -117,43 +604,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/terminalequipment/OperatingSystem.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/test/TestOne.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+            <state relative-caret-position="175">
+              <caret line="11" column="63" selection-start-line="9" selection-start-column="8" selection-end-line="11" selection-end-column="63" />
               <folding>
-                <element signature="e#31#91#0" expanded="true" />
+                <element signature="e#14#64#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/terminalequipment/Operators.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-              <folding>
-                <element signature="e#31#91#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/SchemaUtil.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="33" column="44" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/Util2Type.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -176,7 +633,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/test/TestOne.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/com/util/Util2Type.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/util/SchemaUtil.scala" />
@@ -186,27 +642,30 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/questone/Data2JsonAndMysqlBySparkCore.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/procityct/scriptFile.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/application.conf" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Mysql.scala" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/scala/com/util/LocationUtil.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Json.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/etl/makeDictionary.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/media/MediaSparkCore.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/app/MediaSparkCore.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/util/MakeTupeRdd.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/casepojo/ProAndCity.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/casepojo/CaseClassForAll.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/util/MakeAnsUtil.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/util/MakeTupeRddUtil.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/procityct/Data2HdfsSparkCore.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/etl/MakeDictionary.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/etl/Txt2Parquet.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/terminalequipment/EquipmentSparkCore.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/terminalequipment/NetworkingMode.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Mysql.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Json.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/terminalequipment/OperatingSystem.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/terminalequipment/NetworkingMode.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/terminalequipment/EquipmentSparkCore.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/terminalequipment/Operators.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/util/MakeAnsUtil.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/test/TestOne.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/util/DBConnectionPool.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbcPool.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/scala/com/app/AppSparkCore.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/util/MakeTupeRddUtil.scala" />
       </list>
     </option>
   </component>
@@ -336,15 +795,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="etl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DMP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="location" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -373,6 +823,20 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -419,39 +883,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Operators">
+  <component name="RunManager" selected="Application.AppSparkCore">
+    <configuration name="AppSparkCore" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.app.AppSparkCore" />
+      <module name="DMP" />
+      <option name="PROGRAM_PARAMETERS" value="E:\Test-workspace\testSpark\output\project\DMP\appAndIp E:\Test-workspace\testSpark\output\project\DMP\parquet end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EquipmentSparkCore" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.terminalequipment.EquipmentSparkCore" />
       <module name="DMP" />
-      <option name="PROGRAM_PARAMETERS" value="E:\Test-workspace\testSpark\output\project\DMP\appAndIp E:\Test-workspace\testSpark\output\project\DMP\parquet end" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.terminalequipment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocationSparkCore" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.location.LocationSparkCore" />
-      <module name="DMP" />
       <option name="PROGRAM_PARAMETERS" value="E:\Test-workspace\testSpark\output\project\DMP\parquet end" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.location.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NetworkingMode" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.terminalequipment.NetworkingMode" />
-      <module name="DMP" />
-      <option name="PROGRAM_PARAMETERS" value="E:\Test-workspace\testSpark\output\project\DMP\appAndIp E:\Test-workspace\testSpark\output\project\DMP\parquet end" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.terminalequipment.*" />
@@ -465,7 +915,7 @@
     <configuration name="OperatingSystem" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.terminalequipment.OperatingSystem" />
       <module name="DMP" />
-      <option name="PROGRAM_PARAMETERS" value="E:\Test-workspace\testSpark\output\project\DMP\appAndIp E:\Test-workspace\testSpark\output\project\DMP\parquet end" />
+      <option name="PROGRAM_PARAMETERS" value="E:\Test-workspace\testSpark\output\project\DMP\parquet end" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.terminalequipment.*" />
@@ -483,6 +933,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.terminalequipment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOne" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestOne" />
+      <module name="DMP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -508,17 +971,17 @@
       <item itemvalue="Application.Txt2Parquet" />
       <item itemvalue="Application.EquipmentSparkCore" />
       <item itemvalue="Application.OperatingSystem" />
-      <item itemvalue="Application.NetworkingMode" />
       <item itemvalue="Application.Operators" />
-      <item itemvalue="Application.LocationSparkCore" />
+      <item itemvalue="Application.AppSparkCore" />
+      <item itemvalue="Application.TestOne" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppSparkCore" />
+        <item itemvalue="Application.TestOne" />
         <item itemvalue="Application.Operators" />
         <item itemvalue="Application.OperatingSystem" />
         <item itemvalue="Application.EquipmentSparkCore" />
-        <item itemvalue="Application.NetworkingMode" />
-        <item itemvalue="Application.LocationSparkCore" />
       </list>
     </recent_temporary>
   </component>
@@ -540,7 +1003,7 @@
       <workItem from="1566350723194" duration="876000" />
       <workItem from="1566351871344" duration="5114000" />
       <workItem from="1566357179112" duration="7803000" />
-      <workItem from="1566366363069" duration="21659000" />
+      <workItem from="1566366363069" duration="30296000" />
     </task>
     <task id="LOCAL-00001" summary="first time">
       <created>1566203798903</created>
@@ -598,17 +1061,24 @@
       <option name="project" value="LOCAL" />
       <updated>1566359543826</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="分散求好了各个指标">
+      <created>1566389041723</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1566389041724</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61443000" />
+    <option name="totallyTimeSpent" value="70080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22768533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3290469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -617,7 +1087,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3434505" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58712715" weight="0.399361" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -626,9 +1096,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5651491" weight="0.571885" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.43485087" side_tool="true" weight="0.33389544" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.41287285" side_tool="true" weight="0.17666127" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3290735" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.38019168" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49848714" weight="0.38019168" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -640,7 +1110,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22768533" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3290469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -649,7 +1119,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3434505" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.58712715" visible="true" weight="0.399361" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -658,9 +1128,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5651491" weight="0.571885" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.43485087" side_tool="true" weight="0.33389544" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.41287285" side_tool="true" weight="0.17666127" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3290735" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.38019168" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49848714" weight="0.38019168" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -726,32 +1196,14 @@
     <MESSAGE value="Data2JsonAndMysql" />
     <MESSAGE value="Data2HdfsSparkCore" />
     <MESSAGE value="location" />
-    <option name="LAST_COMMIT_MESSAGE" value="location" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/com/terminalequipment/OperatingSystem.scala</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="分散求好了各个指标" />
+    <option name="LAST_COMMIT_MESSAGE" value="分散求好了各个指标" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="85" selection-start-line="6" selection-start-column="85" selection-end-line="6" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/test/TestOne.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -770,21 +1222,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.json" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://F:/BigdataDataWarehouse/Spark/jar/spark-assembly-1.6.0-hadoop2.6.0.jar!/org/apache/spark/sql/SQLContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -813,70 +1251,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/etl/MakeDictionary.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+          <folding>
+            <element signature="e#17#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/etl/Txt2Parquet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+          <folding>
+            <element signature="e#17#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#22#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/terminalequipment/NetworkingMode.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+        <state relative-caret-position="220">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
             <element signature="e#31#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/terminalequipment/EquipmentSparkCore.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="21" />
-          <folding>
-            <element signature="e#31#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2HdfsSparkCore.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#23#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2Json.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="22" />
-          <folding>
-            <element signature="e#23#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2Mysql.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <element signature="e#23#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/app/AppSparkCore.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-          <folding>
-            <element signature="e#17#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/terminalequipment/OperatingSystem.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        <state relative-caret-position="253">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding>
             <element signature="e#31#91#0" expanded="true" />
           </folding>
@@ -885,35 +1303,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/terminalequipment/Operators.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        <state relative-caret-position="641">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="e#31#91#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/Util2Type.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/MakeTupeRddUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-          <folding>
-            <element signature="e#18#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/SchemaUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -924,39 +1318,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/SchemaUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/Util2Type.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2Mysql.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="44" column="71" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="71" />
+          <folding>
+            <element signature="e#23#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbcPool.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2Json.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+          <folding>
+            <element signature="e#23#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/test/TestOne.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="63" selection-start-line="9" selection-start-column="8" selection-end-line="11" selection-end-column="63" />
+          <folding>
+            <element signature="e#14#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/terminalequipment/EquipmentSparkCore.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding>
+            <element signature="e#31#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2HdfsSparkCore.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <folding>
+            <element signature="e#23#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/LocationUtil.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        <state relative-caret-position="62">
+          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/etl/MakeDictionary.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/DBConnectionPool.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+        <state relative-caret-position="-154">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="45" />
           <folding>
-            <element signature="e#17#48#0" expanded="true" />
+            <element signature="e#19#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/etl/Txt2Parquet.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/MakeTupeRddUtil.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="282">
+          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+          <folding>
+            <element signature="e#18#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/app/AppSparkCore.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
           <folding>
             <element signature="e#17#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="21" />
-          <folding>
-            <element signature="e#22#82#0" expanded="true" />
           </folding>
         </state>
       </provider>

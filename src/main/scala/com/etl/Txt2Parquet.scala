@@ -8,6 +8,8 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * 这是将日志文件洗成spark的默认paquet格式
   *     paquet是一个列式存储格式
+  *     inputPath：E:\Test-workspace\testSpark\input\project\DMP\logs
+  *     outputPath：E:\Test-workspace\testSpark\output\project\DMP\parquet
   */
 object Txt2Parquet {
     def main(args: Array[String]): Unit = {

@@ -7,6 +7,8 @@ import org.apache.spark.sql.{DataFrame, SQLContext, SaveMode}
 import org.apache.spark.{SparkConf, SparkContext}
 /**
   * 统计各省市数据量分布情况
+  *     inputPath：E:\Test-workspace\testSpark\output\project\DMP\parquet
+  *     outputPath：mysql
   */
 object Data2Mysql {
     def main(args: Array[String]): Unit = {
@@ -33,16 +35,19 @@ object Data2Mysql {
         //读取parquet文件
         val logsDF: DataFrame = sqlContext.read.parquet(inputPath)
 
-        //创建临时文件
+        //创建临时表
         logsDF.registerTempTable("logs")
-
         val sqlString: String = "select count(*) ct, provincename,cityname from logs group by provincename,cityname sort by ct desc"
         val ansDF: DataFrame = sqlContext.sql(sqlString)
         ansDF.show()
+
+        //加载数据库连接的配置文件
         val load: Config = ConfigFactory.load("application.properties")
         val prop: Properties = new Properties()
         prop.setProperty("user", load.getString("jdbc.user"))
         prop.setProperty("password", load.getString("jdbc.password"))
+
+        //将数据写出到mysql
         ansDF.write.mode(SaveMode.Append).jdbc(load.getString("jdbc.url"), load.getString("jdbc.table"), prop)
         sc.stop()
     }

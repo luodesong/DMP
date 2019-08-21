@@ -1,6 +1,8 @@
 package com.app
 
-import com.util.LocationUtil
+import java.sql.{Connection, Statement}
+
+import com.util.{DBConnectionPool, LocationUtil}
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext}
@@ -9,6 +11,10 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * 媒体分析
   *     爱奇艺 等
+  *     dericPath：E:\Test-workspace\testSpark\output\project\DMP\appAndIp
+  *     inputPath：E:\Test-workspace\testSpark\output\project\DMP\parquet
+  *     outputPath：end 占位
+  *
   */
 object AppSparkCore {
     def main(args: Array[String]): Unit = {
@@ -79,6 +85,17 @@ object AppSparkCore {
             x.zip(y).map(t => {
                 t._1 + t._2
             })
+        })
+
+        //这个是在driver端执行的
+        ansRDD.foreachPartition(pr => {
+            val connection: Connection = DBConnectionPool.getConn()
+            val statement: Statement = connection.createStatement()
+            //这个是在exector端执行的 如果直接执行这个的会报一个没有序列化的错
+            pr.foreach(x => {
+                statement.execute(s"insert into AppNameInfo values('${x._1.toString}',${x._2(0).toInt},${x._2(1).toInt}, ${x._2(2).toInt}, ${x._2(3).toInt}, ${x._2(4).toInt}, ${x._2(5).toInt}, ${x._2(6).toInt}, ${x._2(7)}, ${x._2(8)})")
+            })
+            DBConnectionPool.releaseCon(connection)
         })
 
         //组装成一个DF

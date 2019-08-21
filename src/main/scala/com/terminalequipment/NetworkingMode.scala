@@ -8,16 +8,18 @@ import org.apache.spark.sql.{DataFrame, SQLContext}
 /**
   * 终端设备模块
   *     网络类 2G 3G 4G
+  *  inputPath：E:\Test-workspace\testSpark\output\project\DMP\parquet
+  *  outputPath：end
   */
 object NetworkingMode {
     def main(args: Array[String]): Unit = {
         // 模拟企业开发模式，首先判断一下目录 是否为空
-        if (args.length != 3) {
+        if (args.length != 2) {
             println("目录不正确，退出程序！")
             sys.exit()
         }
         // 创建一个集合，存储一下输入输出目录
-        val Array(dericPath, inputPath, outputPath) = args
+        val Array(inputPath, outputPath) = args
         val conf = new SparkConf()
                 .setAppName(this.getClass.getName).setMaster("local")
                 // 处理数据，采取scala的序列化方式，性能比Java默认的高
@@ -35,6 +37,7 @@ object NetworkingMode {
           * MakeTupeRddUtil.getTupes(logs:DataFrame, flagString: String)：这是自定义的方法用于拼接元组
           *     logs：读取进来的RDD或者是DataFrame
           *     flagString：这个是数据处理类型的标志，有了这个标志才能清楚拼接什么RDD
+          *
           *
           */
         val networkmannerNameAndList: RDD[(String, List[Double])] = MakeTupeRddUtil.getTupes(logsDF,"networkmannername")

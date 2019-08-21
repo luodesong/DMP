@@ -8,6 +8,8 @@ import org.apache.spark.sql.{DataFrame, SQLContext}
 /**
   * 终端设备
   *     运营商
+  *     inputPath: E:\Test-workspace\testSpark\output\project\DMP\parquet
+  *     outputPath: end
   */
 object Operators {
     def main(args: Array[String]): Unit = {
@@ -17,7 +19,7 @@ object Operators {
             sys.exit()
         }
         // 创建一个集合，存储一下输入输出目录
-        val Array(dericPath, inputPath, outputPath) = args
+        val Array(inputPath, outputPath) = args
         val conf = new SparkConf()
                 .setAppName(this.getClass.getName).setMaster("local")
                 // 处理数据，采取scala的序列化方式，性能比Java默认的高
