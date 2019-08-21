@@ -1,6 +1,4 @@
-package com.questone
-
-import java.util.Properties
+package com.procityct
 
 import org.apache.spark.sql.{DataFrame, SQLContext, SaveMode}
 import org.apache.spark.{SparkConf, SparkContext}
@@ -8,7 +6,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * 统计各省市数据量分布情况
   */
-object Data2JsonAndMysql {
+object Data2Json {
     def main(args: Array[String]): Unit = {
         //判断路径
         if (args.length != 2) {
@@ -39,12 +37,11 @@ object Data2JsonAndMysql {
         val sqlString: String = "select count(*) ct, provincename,cityname from logs group by provincename,cityname sort by ct desc"
         val ansDF: DataFrame = sqlContext.sql(sqlString)
         ansDF.show()
-        //ansDF.write.mode(SaveMode.Append).json(outputPath)
-        val pro = new Properties()
-        pro.put("user", "root")
-        pro.put("password", "123456")
-        val url = "jdbc:mysql://localhost:3306/spark_test"
-        ansDF.write.mode(SaveMode.Append).jdbc(url, "t1", pro)
+
+        /*
+        coalesce(1):作用是减少分区的分区器
+         */
+        ansDF.coalesce(1).write.mode(SaveMode.Append).json(outputPath)
 
         sc.stop()
     }

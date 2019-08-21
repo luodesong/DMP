@@ -2,9 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fda14ca6-c40e-4557-9748-8fd8d25b2852" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/questone/Data2HdfsparkCore.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Mysql.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/util/LocationUtil.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysql$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysql$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/questone/Data2HdfsSparkCore.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/procityct/Data2HdfsSparkCore.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/questone/Data2JsonAndMysql.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Json.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysql$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysql.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysqlBySparkCore$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysqlBySparkCore$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysqlBySparkCore$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysqlBySparkCore$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysqlBySparkCore$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysqlBySparkCore$$typecreator1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysqlBySparkCore$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/Data2JsonAndMysqlBySparkCore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/ProAndCity$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/questone/ProAndCity.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,56 +39,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/etl/Txt2Parquet.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-858">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="e#17#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/questone/Data2JsonAndMysql.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2Mysql.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="109">
+              <caret line="41" column="40" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="40" />
               <folding>
-                <element signature="e#22#49#0" expanded="true" />
+                <element signature="e#23#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/questone/Data2HdfsparkCore.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-              <folding>
-                <element signature="e#22#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test01.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/SchemaUtil.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+            <state relative-caret-position="66">
+              <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -100,6 +90,14 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/etl/Txt2Parquet.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/questone/Data2JsonAndMysql.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/questone/Data2JsonAndMysqlBySparkCore.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/procityct/scriptFile.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Json.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/procityct/Data2HdfsSparkCore.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/util/LocationUtil.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.conf" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/procityct/Data2Mysql.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -163,9 +161,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="670" />
-    <option name="y" value="1" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="222" />
+    <option name="y" value="77" />
     <option name="width" value="1009" />
     <option name="height" value="788" />
   </component>
@@ -197,6 +195,13 @@
               <item name="DMP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -214,45 +219,38 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="etl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DMP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="questone" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DMP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="procityct" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/BigdataDataWarehouse/Spark/jar/spark-assembly-1.6.0-hadoop2.6.0.jar!/" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Properties" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/application.conf" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3025568" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.splitter.proportion" value="0.32448035" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/resources/application.conf" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.procityct" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Git\DMP\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -266,14 +264,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Data2JsonAndMysqlBySparkCore">
-    <configuration name="Data2JsonAndMysql" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.questone.Data2JsonAndMysql" />
+  <component name="RunManager" selected="Application.Data2Mysql">
+    <configuration name="Data2HdfsSparkCore" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.procityct.Data2HdfsSparkCore" />
       <module name="DMP" />
-      <option name="PROGRAM_PARAMETERS" value="E:\Test-workspace\testSpark\output\project\DMP\parquet E:\Test-workspace\testSpark\output\project\DMP\json" />
+      <option name="PROGRAM_PARAMETERS" value="E:\Test-workspace\testSpark\input\project\DMP hdsf://min1:8020/sparktest/procity" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.questone.*" />
+          <option name="PATTERN" value="com.procityct.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -281,12 +279,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Data2JsonAndMysqlBySparkCore" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.questone.Data2JsonAndMysqlBySparkCore" />
+    <configuration name="Data2Json" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.procityct.Data2Json" />
       <module name="DMP" />
+      <option name="PROGRAM_PARAMETERS" value="E:\Test-workspace\testSpark\output\project\DMP\parquet E:\Test-workspace\testSpark\output\project\DMP\json" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.questone.*" />
+          <option name="PATTERN" value="com.procityct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Data2Mysql" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.procityct.Data2Mysql" />
+      <module name="DMP" />
+      <option name="PROGRAM_PARAMETERS" value="E:\Test-workspace\testSpark\output\project\DMP\parquet test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.procityct.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -310,13 +323,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.Txt2Parquet" />
-      <item itemvalue="Application.Data2JsonAndMysql" />
-      <item itemvalue="Application.Data2JsonAndMysqlBySparkCore" />
+      <item itemvalue="Application.Data2HdfsSparkCore" />
+      <item itemvalue="Application.Data2Mysql" />
+      <item itemvalue="Application.Data2Json" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Data2JsonAndMysqlBySparkCore" />
-        <item itemvalue="Application.Data2JsonAndMysql" />
+        <item itemvalue="Application.Data2Mysql" />
+        <item itemvalue="Application.Data2Json" />
+        <item itemvalue="Application.Data2HdfsSparkCore" />
       </list>
     </recent_temporary>
   </component>
@@ -335,6 +350,9 @@
       <workItem from="1566214713873" duration="778000" />
       <workItem from="1566267558233" duration="6702000" />
       <workItem from="1566300771058" duration="11850000" />
+      <workItem from="1566350723194" duration="876000" />
+      <workItem from="1566351871344" duration="5114000" />
+      <workItem from="1566357179112" duration="2219000" />
     </task>
     <task id="LOCAL-00001" summary="first time">
       <created>1566203798903</created>
@@ -378,17 +396,24 @@
       <option name="project" value="LOCAL" />
       <updated>1566309023291</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Data2HdfsSparkCore">
+      <created>1566350853603</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1566350853603</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25991000" />
+    <option name="totallyTimeSpent" value="34200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30332828" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24054463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -397,13 +422,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.047923323" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49840257" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5651491" weight="0.33389544" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5651491" weight="0.571885" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.43485087" side_tool="true" weight="0.33389544" />
@@ -415,45 +440,16 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.30926216" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.30786687" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.48253968" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.68899524" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5651491" weight="0.33389544" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.43485087" side_tool="true" weight="0.33389544" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.31948882" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.30926216" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -501,16 +497,10 @@
     <MESSAGE value="模板代码end" />
     <MESSAGE value="项目初始化" />
     <MESSAGE value="Data2JsonAndMysql" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data2JsonAndMysql" />
+    <MESSAGE value="Data2HdfsSparkCore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data2HdfsSparkCore" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="92" column="4" lean-forward="true" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -538,22 +528,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test01.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/SchemaUtil.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="704">
           <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test01.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/scriptFile.scala" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/etl/Txt2Parquet.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-858">
+        <state relative-caret-position="396">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#17#56#0" expanded="true" />
@@ -561,23 +550,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/questone/Data2JsonAndMysql.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2Json.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="110">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding>
-            <element signature="e#22#49#0" expanded="true" />
+            <element signature="e#23#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/questone/Data2HdfsparkCore.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        <state relative-caret-position="572">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="27" />
           <folding>
-            <element signature="e#22#53#0" expanded="true" />
+            <element signature="e#22#60#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/util/LocationUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2HdfsSparkCore.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="44" column="98" selection-start-line="44" selection-start-column="98" selection-end-line="44" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/procityct/Data2Mysql.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="40" />
+          <folding>
+            <element signature="e#23#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -602,7 +638,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3025568" />
               </list>
             </option>
           </splitter-proportions>
@@ -636,7 +672,8 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3025568" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -656,11 +693,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>spark-assembly-1.6.0-hadoop2.6.0</last-edited>
+          <last-edited>Maven: org.scala-lang:scala-library:2.10.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.4334239" />
               </list>
             </option>
           </splitter-proportions>
