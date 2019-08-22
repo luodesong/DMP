@@ -67,7 +67,7 @@ object AppSparkCore {
             var appid: String = row.getAs[String]("appid")
 
             //如果数据的appName为空的，就通过id去广播变量中去查
-            if (appname == null) {
+            if (appname.equals("") || appname.equals(" ")) {
                 appid = broadcast.value.getOrElse(appid, "0")
             }
 
@@ -87,6 +87,9 @@ object AppSparkCore {
             })
         })
 
+        /**
+          * 出数据到数据库中
+          */
         //这个是在driver端执行的
         ansRDD.foreachPartition(pr => {
             val connection: Connection = DBConnectionPool.getConn()
@@ -107,6 +110,5 @@ object AppSparkCore {
 
         sc.stop()
     }
-
 }
 case class AppNameInfo(appname: String, originalRequest: Int, validRequest: Int, advertisingRequest: Int, showAmount: Int, clinkAmount: Int, parAmount: Int, accAmount: Int, endOne: Double, endTwo: Double)

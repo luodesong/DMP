@@ -1,6 +1,8 @@
 package com.terminalequipment
 
-import com.util.{LocationUtil, MakeAnsUtil, MakeTupeRddUtil}
+import java.sql.{Connection, Statement}
+
+import com.util.{DBConnectionPool, LocationUtil, MakeAnsUtil, MakeTupeRddUtil}
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext}
@@ -14,7 +16,7 @@ import org.apache.spark.sql.{DataFrame, SQLContext}
 object Operators {
     def main(args: Array[String]): Unit = {
         // 模拟企业开发模式，首先判断一下目录 是否为空
-        if (args.length != 3) {
+        if (args.length != 2) {
             println("目录不正确，退出程序！")
             sys.exit()
         }
@@ -45,6 +47,17 @@ object Operators {
 
         //这一步是封装了一个聚合函数，传进去的是一个RDD
         val ansRDD: RDD[(String, List[Double])] = MakeAnsUtil.getAns(operatorsNameAndList)
+
+        //装载数据到数据库
+        ansRDD.foreachPartition(t => {
+            val connection: Connection = DBConnectionPool.getConn()
+            val statement: Statement = connection.createStatement()
+            t.foreach(x => {
+                val sql: String = s"insert into OperatorsNameInfo values('${x._1}',${x._2(0).toInt},${x._2(1).toInt}, ${x._2(2).toInt}, ${x._2(3).toInt}, ${x._2(4).toInt}, ${x._2(5).toInt}, ${x._2(6).toInt}, ${x._2(7)}, ${x._2(8)})"
+                statement.execute(sql)
+            })
+            DBConnectionPool.releaseCon(connection)
+        })
 
         //这一步是封装成一个DF
         val rowRDD: RDD[OperatorsNameInfo] = ansRDD.map(x => {
