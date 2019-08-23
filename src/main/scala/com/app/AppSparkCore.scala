@@ -26,7 +26,7 @@ object AppSparkCore {
         // 创建一个集合，存储一下输入输出目录
         val Array(dericPath, inputPath, outputPath) = args
         val conf = new SparkConf()
-                .setAppName(this.getClass.getName).setMaster("local")
+                .setAppName(this.getClass.getName).setMaster("local[*]")
                 // 处理数据，采取scala的序列化方式，性能比Java默认的高
                 .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
         val sc = new SparkContext(conf)
@@ -63,12 +63,12 @@ object AppSparkCore {
             val adorderid = row.getAs[Int]("adorderid")
             val winprice = row.getAs[Double]("winprice")
             val adpayment = row.getAs[Double]("adpayment")
-            val appname: String = row.getAs[String]("appname")
-            var appid: String = row.getAs[String]("appid")
+            var appname: String = row.getAs[String]("appname")
+            val appid: String = row.getAs[String]("appid")
 
             //如果数据的appName为空的，就通过id去广播变量中去查
             if (appname.equals("") || appname.equals(" ")) {
-                appid = broadcast.value.getOrElse(appid, "0")
+                appname = broadcast.value.getOrElse(appid, "0")
             }
 
             //通过工具类求得每一组中的数据的情况，是1,0数组
