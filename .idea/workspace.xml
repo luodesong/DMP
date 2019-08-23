@@ -2,15 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fda14ca6-c40e-4557-9748-8fd8d25b2852" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbcPool.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbcPool.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/app/AppSparkCore.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/app/AppSparkCore.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/location/LocationSparkCore.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/EquipmentSparkCore.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/EquipmentSparkCore.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/NetworkingMode.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/NetworkingMode.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/OperatingSystem.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/OperatingSystem.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/Operators.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/terminalequipment/Operators.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppNameInfo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppNameInfo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppNameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppNameInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppSparkCore$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/LocationSparkCore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/location/ProAndCity$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/ProAndCity$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/location/ProAndCity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/location/ProAndCity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/Data2HdfsSparkCore$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/procityct/ProAndCity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/procityct/ProAndCity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/ClientNameInfo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/ClientNameInfo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/ClientNameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/ClientNameInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/DeviceNameInfo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/DeviceNameInfo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/DeviceNameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/DeviceNameInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/EquipmentSparkCore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkMannerNameInfo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkMannerNameInfo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkMannerNameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkMannerNameInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/NetworkingMode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatingSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/Operators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatorsNameInfo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatorsNameInfo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatorsNameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/terminalequipment/OperatorsNameInfo.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/app/AppSparkCore.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+            <state relative-caret-position="133">
+              <caret line="102" lean-forward="true" selection-start-line="92" selection-start-column="8" selection-end-line="102" />
               <folding>
                 <element signature="e#17#56#0" expanded="true" />
               </folding>
@@ -546,7 +576,7 @@
       <workItem from="1566351871344" duration="5114000" />
       <workItem from="1566357179112" duration="7803000" />
       <workItem from="1566366363069" duration="30941000" />
-      <workItem from="1566435437618" duration="9716000" />
+      <workItem from="1566435437618" duration="12768000" />
     </task>
     <task id="LOCAL-00001" summary="first time">
       <created>1566203798903</created>
@@ -618,17 +648,24 @@
       <option name="project" value="LOCAL" />
       <updated>1566400735961</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="完成了数据到数据库的对接">
+      <created>1566446269710</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1566446269710</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80441000" />
+    <option name="totallyTimeSpent" value="83493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="697" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.5604396" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.55729985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -637,7 +674,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.58712715" visible="true" weight="0.3524452" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58712715" weight="0.21753794" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -748,7 +785,8 @@
     <MESSAGE value="location" />
     <MESSAGE value="分散求好了各个指标" />
     <MESSAGE value="完成了自建数据库连接池" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了自建数据库连接池" />
+    <MESSAGE value="完成了数据到数据库的对接" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了数据到数据库的对接" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
@@ -971,8 +1009,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/app/AppSparkCore.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+        <state relative-caret-position="133">
+          <caret line="102" lean-forward="true" selection-start-line="92" selection-start-column="8" selection-end-line="102" />
           <folding>
             <element signature="e#17#56#0" expanded="true" />
           </folding>
