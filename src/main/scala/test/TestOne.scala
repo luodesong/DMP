@@ -2,7 +2,7 @@ package test
 
 import java.sql.{Connection, ResultSet, Statement}
 
-import com.util.DBConnectionPool
+import com.luodesong.util.DBConnectionPool
 
 
 object TestOne {
