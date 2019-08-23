@@ -36,7 +36,7 @@ object MakeDictionary {
 
         val tempRDD: RDD[Array[String]] = dictionaryLogs.map(x => {
             //"\\s"切割是的包括空格和\t的数据
-            x.split("\\s")
+            x.split("\t")
         }).filter(_.length >= 5)//如果数据小于了5的时候就是没用的垃圾数据
         val appAndIdRDD: RDD[(String, String)] = tempRDD.map(x => {
             (x(4),x(1))
