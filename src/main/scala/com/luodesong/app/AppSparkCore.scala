@@ -26,7 +26,8 @@ object AppSparkCore {
         // 创建一个集合，存储一下输入输出目录
         val Array(dericPath, inputPath, outputPath) = args
         val conf = new SparkConf()
-                .setAppName(this.getClass.getName).setMaster("local[*]")
+                .setAppName(this.getClass.getName)
+                .setMaster("local[*]")
                 // 处理数据，采取scala的序列化方式，性能比Java默认的高
                 .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
         val sc = new SparkContext(conf)

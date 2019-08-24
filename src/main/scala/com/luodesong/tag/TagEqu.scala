@@ -37,7 +37,7 @@ object TagEqu extends Tag {
             case _ => myList.append(("D0001000" + 4, 1))
         }
         networkmannername match {
-            case v if (v.equals("WIFI")) => myList.append(("D0002000" + 1, 1))
+            case v if (v.equals("Wifi")) => myList.append(("D0002000" + 1, 1))
             case v if (v.equals("4G")) => myList.append(("D0002000" + 2, 1))
             case v if (v.equals("3G")) => myList.append(("D0002000" + 3, 1))
             case v if (v.equals("2G")) => myList.append(("D0002000" + 4, 1))

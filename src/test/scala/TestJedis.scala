@@ -1,8 +1,5 @@
-package test
-
 import com.luodesong.util.JedisPool
 import redis.clients.jedis.Jedis
-
 
 object TestJedis {
     def main(args: Array[String]): Unit = {

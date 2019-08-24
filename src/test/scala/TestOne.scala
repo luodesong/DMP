@@ -1,9 +1,6 @@
-package test
-
 import java.sql.{Connection, ResultSet, Statement}
 
 import com.luodesong.util.DBConnectionPool
-
 
 object TestOne {
     def main(args: Array[String]): Unit = {
