@@ -54,4 +54,56 @@ object TagUtil {
                 "AODS: " + v.getAs[String]("androididsha1")
         }
     }
+
+    //获取所有的userId
+    // 获取所有的ID
+    def getAnyAllUserId(r :Row)={
+        var list = List[String]()
+        if(StringUtils.isNotEmpty(r.getAs[String]("imei"))){
+            list:+= "TM" + r.getAs[String]("imei")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("mac"))){
+            list:+= "MC" + r.getAs[String]("mac")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("idfa"))){
+            list:+= "ID" + r.getAs[String]("idfa")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("androidid"))){
+            list:+= "AD" + r.getAs[String]("androidid")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("openudid"))){
+            list:+= "OU" + r.getAs[String]("openudid")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("imeimd5"))){
+            list:+= "TMM" + r.getAs[String]("imeimd5")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("macmd5"))){
+            list:+= "MCM" + r.getAs[String]("macmd5")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("idfamd5"))){
+            list:+= "IDM" + r.getAs[String]("idfamd5")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("androididmd5"))){
+            list:+= "ADM" + r.getAs[String]("androididmd5")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("openudidmd5"))){
+            list:+= "OUM" + r.getAs[String]("openudidmd5")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("imeisha1"))){
+            list:+= "TMS" + r.getAs[String]("imeisha1")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("macsha1"))){
+            list:+= "MCS" + r.getAs[String]("macsha1")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("idfasha1"))){
+            list:+= "IDS" + r.getAs[String]("idfasha1")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("androididsha1"))){
+            list:+= "ADS" + r.getAs[String]("androididsha1")
+        }
+        if(StringUtils.isNotEmpty(r.getAs[String]("openudidsha1"))){
+            list:+= "OUS" + r.getAs[String]("openudidsha1")
+        }
+        list
+    }
 }

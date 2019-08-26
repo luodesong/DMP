@@ -19,7 +19,7 @@ object MapUtil {
         //拼接传进来的经纬度
         var location: String = lon + "," + lat
         //拼接http请求
-        val url = s"https://restapi.amap.com/v3/geocode/regeo?location=${location}&key=2d24d3f8f2e10bca938db3886f690fc3"
+        val url = s"https://restapi.amap.com/v3/geocode/regeo?location=${location}&key=a580937f8ea46ff8f9839691663805a4"
         //调用编写的httpHtil获取到json字符串
         val jsonString: String = HttpUtil.getJson(url)
         //调用fastjson的json的对象

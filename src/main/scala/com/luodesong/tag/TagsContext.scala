@@ -83,11 +83,13 @@ object TagsContext {
                         })
                         //获取地理位置的标签
                         val locationTag: ListBuffer[(String, Int)] = TagLoc.makeTags(row)
+                        //获取商圈标签
+                        val businessTag: ListBuffer[(String, Int)] = TagBusi.makeTags(row, re)
 
                         /**
                           * (userid，list(("LC03",1),("LC03",1),("CNxxxx",1),("App爱奇艺",1),("App爱奇艺",1),("D00010001",1),("D00010002",1)))
                           */
-                        (userId, (advTag ++ appNameTag ++ channleTag ++ equpmentTag ++ keyTag ++ locationTag).toList)
+                        (userId, (advTag ++ appNameTag ++ channleTag ++ equpmentTag ++ keyTag ++ locationTag ++ businessTag).toList)
                     })
                 })
         //处理组合结果list

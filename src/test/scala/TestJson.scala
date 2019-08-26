@@ -13,7 +13,7 @@ class TestJson {
         val sc: SparkContext = new SparkContext(conf)
         val sqlContext: Unit = new SQLContext(sc)
                 .setConf("spark.io.compression.snappy.codec", "snappy")
-        val str: String = MapUtil.getBusinessFromAmap(116.310003,39.991957)
+        val str: String = MapUtil.getBusinessFromAmap(0,0)
         println(str)
     }
 

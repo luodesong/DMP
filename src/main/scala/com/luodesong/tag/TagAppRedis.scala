@@ -1,8 +1,10 @@
 package com.luodesong.tag
 
 import com.luodesong.tag.thetrait.Tag
+import com.luodesong.util.JedisPool
 import org.apache.spark.sql.Row
 import redis.clients.jedis.Jedis
+
 import scala.collection.mutable.ListBuffer
 
 /**
@@ -30,6 +32,7 @@ object TagAppRedis extends Tag{
             //从redis中获得value值
             appname = jedis.get(appid)
         }
+        JedisPool.releaseMyredis(jedis)
         myList.append(("APP " + appname, 1))
         myList
     }

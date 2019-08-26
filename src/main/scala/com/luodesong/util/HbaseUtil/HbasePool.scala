@@ -1,4 +1,4 @@
-package com.luodesong.util
+package com.luodesong.util.HbaseUtil
 
 import java.util.concurrent.{ExecutorService, Executors}
 
