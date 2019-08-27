@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fda14ca6-c40e-4557-9748-8fd8d25b2852" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/graphx/GraphxTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagBusi.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseNsUtil.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbasePool.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDDLUtil.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDMLUtil.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/TestAllId.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/TestTagBus.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/tag/thetrait/TagsContext2Hbase.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/Data2HbaseUtil.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagAppRedis.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagAppRedis.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hbase.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hbase.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/luodesong/graphx/GraphxTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/graphx/GraphxTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagsContext.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagsContext.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbasePool.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/MapUtil.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/MapUtil.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/TagUtil.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/TagUtil.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/TestHbase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/TestHbase.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/TestJson.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/TestJson.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbasePool.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbasePool.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDDLUtil.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDDLUtil.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDMLUtil.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDMLUtil.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/TestAllId.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/TestAllId.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/TestHbase.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+            <state relative-caret-position="110">
+              <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="26" />
               <folding>
                 <element signature="e#0#79#0" expanded="true" />
               </folding>
@@ -61,10 +53,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseNsUtil.scala">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/TestAllId.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="2706">
+              <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/tag/thetrait/TagsContext2Hbase.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="131" column="17" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/Data2HbaseUtil.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding>
                 <element signature="e#38#88#0" expanded="true" />
               </folding>
@@ -73,10 +86,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagsContext.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDDLUtil.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
               <folding>
                 <element signature="e#38#72#0" expanded="true" />
               </folding>
@@ -85,34 +107,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/TestTagBus.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/TagUtil.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="123">
+              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/MapUtil.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="21" column="119" selection-start-line="21" selection-start-column="119" selection-end-line="21" selection-end-column="119" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#28#85#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/TestAllId.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDMLUtil.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="13" column="65" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="65" />
+            <state relative-caret-position="198">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding>
                 <element signature="e#38#78#0" expanded="true" />
               </folding>
@@ -121,37 +140,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/Util2Type.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbasePool.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="16" column="84" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/hbase.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="21" selection-start-line="3" selection-end-line="3" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/DBConnectionPool.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-516">
-              <caret column="8" selection-start-column="8" selection-end-column="26" />
+            <state relative-caret-position="110">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -184,8 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/com/tag/TagsContext.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/etl/PutData2Redis.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/tag/TagAppRedis.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/JdeisPool.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/etl/PutData2Redis.scala" />
@@ -210,17 +200,13 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HttpUtil.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/exam/JsonUtil.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/TestOne.scala" />
-        <option value="$PROJECT_DIR$/src/main/resources/hbase.properties" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbasePool.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagAppRedis.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/TestJson.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/MapUtil.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/TestTagBus.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagBusi.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagsContext.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/graphx/GraphxTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/TagUtil.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/TestAllId.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseNSOperatorUtil.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseOperator.java" />
@@ -229,12 +215,18 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseScanner.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseNSOperatorUtil.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseUtil.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbasePool.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseNsUtil.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDDLUtil.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/TestHbase.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/graphx/GraphxTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagsContext.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbasePool.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDMLUtil.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/Data2HbaseUtil.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/hbase.properties" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDDLUtil.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/TestAllId.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/luodesong/tag/thetrait/TagsContext2Hbase.scala" />
       </list>
     </option>
   </component>
@@ -291,7 +283,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="775" />
   </component>
@@ -300,7 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -309,10 +300,128 @@
               <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
               <item name="DMP" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="luodesong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="luodesong" type="462c0819:PsiDirectoryNode" />
+              <item name="etl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="luodesong" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="luodesong" type="462c0819:PsiDirectoryNode" />
+              <item name="tag" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="luodesong" type="462c0819:PsiDirectoryNode" />
+              <item name="tag" type="462c0819:PsiDirectoryNode" />
+              <item name="thetrait" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="luodesong" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="luodesong" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="HbaseUtil" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,34 +429,34 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Properties" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bap_hive" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3025568" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.32448035" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/resources/application.conf" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Git\DMP\src\main\scala\com" />
+      <recent name="E:\Git\DMP\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Git\DMP\src\main\scala\com\luodesong\util\HbaseUtil" />
-      <recent name="E:\Git\DMP\src\main\resources" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.luodesong.tag.thetrait" />
       <recent name="com.luodesong.util" />
       <recent name="com.tag.thetrait" />
       <recent name="com.util" />
       <recent name="com.tag" />
-      <recent name="com.procityct" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Git\DMP\src\main\scala\com" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Git\DMP\src\main\scala\com\luodesong\util\HbaseUtil" />
       <recent name="E:\Git\DMP\src\main\resources" />
     </key>
   </component>
@@ -363,7 +472,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestHbase.testThree">
+  <component name="RunManager" selected="JUnit.TestAllId.testOne">
     <configuration name="GraphxTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.luodesong.graphx.GraphxTest" />
       <module name="DMP" />
@@ -405,6 +514,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestAllId.testOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DMP" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestAllId" />
+      <option name="METHOD_NAME" value="testOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestHbase.testThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DMP" />
       <option name="PACKAGE_NAME" value="" />
@@ -425,30 +544,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTagBus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DMP" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTagBus" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Txt2Parquet" />
       <item itemvalue="Application.TagsContext" />
-      <item itemvalue="JUnit.TestTagBus" />
       <item itemvalue="Application.GraphxTest" />
       <item itemvalue="JUnit.TestHbase.testTow" />
       <item itemvalue="JUnit.TestHbase.testThree" />
+      <item itemvalue="JUnit.TestAllId.testOne" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestAllId.testOne" />
+        <item itemvalue="Application.GraphxTest" />
         <item itemvalue="JUnit.TestHbase.testThree" />
         <item itemvalue="JUnit.TestHbase.testTow" />
-        <item itemvalue="Application.GraphxTest" />
         <item itemvalue="Application.TagsContext" />
-        <item itemvalue="JUnit.TestTagBus" />
       </list>
     </recent_temporary>
   </component>
@@ -475,7 +585,10 @@
       <workItem from="1566522958388" duration="35147000" />
       <workItem from="1566565741092" duration="5338000" />
       <workItem from="1566609686118" duration="33106000" />
-      <workItem from="1566781372408" duration="36726000" />
+      <workItem from="1566781372408" duration="36932000" />
+      <workItem from="1566867301271" duration="11316000" />
+      <workItem from="1566888630977" duration="7165000" />
+      <workItem from="1566896637300" duration="7043000" />
     </task>
     <task id="LOCAL-00001" summary="first time">
       <created>1566203798903</created>
@@ -589,48 +702,56 @@
       <option name="project" value="LOCAL" />
       <updated>1566655456518</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="完成商圈标签，完成了hbase的API编写，测试了数据到hbase 的对接。">
+      <created>1566828225516</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1566828225517</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestTagBus - 2019.08.26 at 14h 05m 58s.xml">
-      <configuration name="TestTagBus" configurationId="JUnit" />
+    <history-entry file="TestAllId_testOne - 2019.08.27 at 17h 09m 34s.xml">
+      <configuration name="TestAllId.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTagBus - 2019.08.26 at 14h 08m 02s.xml">
-      <configuration name="TestTagBus" configurationId="JUnit" />
+    <history-entry file="TestAllId_testOne - 2019.08.27 at 17h 21m 48s.xml">
+      <configuration name="TestAllId.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTagBus - 2019.08.26 at 14h 11m 46s.xml">
-      <configuration name="TestTagBus" configurationId="JUnit" />
+    <history-entry file="TestAllId_testOne - 2019.08.27 at 17h 29m 50s.xml">
+      <configuration name="TestAllId.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTagBus - 2019.08.26 at 14h 12m 44s.xml">
-      <configuration name="TestTagBus" configurationId="JUnit" />
+    <history-entry file="TestAllId_testOne - 2019.08.27 at 17h 30m 35s.xml">
+      <configuration name="TestAllId.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTagBus - 2019.08.26 at 14h 17m 12s.xml">
-      <configuration name="TestTagBus" configurationId="JUnit" />
+    <history-entry file="TestAllId_testOne - 2019.08.27 at 18h 37m 13s.xml">
+      <configuration name="TestAllId.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTagBus - 2019.08.26 at 14h 21m 47s.xml">
-      <configuration name="TestTagBus" configurationId="JUnit" />
+    <history-entry file="TestAllId_testOne - 2019.08.27 at 18h 40m 55s.xml">
+      <configuration name="TestAllId.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTagBus - 2019.08.26 at 14h 29m 26s.xml">
-      <configuration name="TestTagBus" configurationId="JUnit" />
+    <history-entry file="TestAllId_testOne - 2019.08.27 at 18h 41m 25s.xml">
+      <configuration name="TestAllId.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTagBus - 2019.08.26 at 14h 42m 29s.xml">
-      <configuration name="TestTagBus" configurationId="JUnit" />
+    <history-entry file="TestAllId_testOne - 2019.08.27 at 18h 54m 14s.xml">
+      <configuration name="TestAllId.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestHbase_testTow - 2019.08.26 at 20h 30m 36s.xml">
-      <configuration name="TestHbase.testTow" configurationId="JUnit" />
+    <history-entry file="TestAllId_testOne - 2019.08.27 at 18h 56m 38s.xml">
+      <configuration name="TestAllId.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestHbase_testThree - 2019.08.26 at 21h 43m 41s.xml">
-      <configuration name="TestHbase.testThree" configurationId="JUnit" />
+    <history-entry file="TestAllId_testOne - 2019.08.27 at 18h 57m 42s.xml">
+      <configuration name="TestAllId.testOne" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193810000" />
+    <option name="totallyTimeSpent" value="219540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21406959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29425114" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -639,18 +760,18 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58712715" visible="true" weight="0.15654951" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.47284344" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58712715" visible="true" weight="0.19808307" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22204472" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5651491" weight="0.17179903" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.41287285" side_tool="true" weight="0.17666127" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.41287285" side_tool="true" weight="0.17571884" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3290735" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3290735" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49848714" weight="0.24760383" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49848714" weight="0.25079873" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -662,7 +783,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2934947" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40816328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -671,18 +792,18 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58712715" visible="true" weight="0.4456869" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.47284344" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58712715" weight="0.22852512" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22204472" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5651491" weight="0.17179903" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.41287285" side_tool="true" weight="0.17666127" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.41287285" side_tool="true" weight="0.17571884" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3290735" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3290735" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49848714" weight="0.24760383" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49848714" weight="0.25121555" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -766,7 +887,8 @@
     <MESSAGE value="用redis方式完成了标签的指标,并且完成了大部分的注释编写。" />
     <MESSAGE value="修改了数据字典切分的Bug" />
     <MESSAGE value="完成了远程请求地理位置并解析了json数据，完成了hbase的连接池的建立和测试。" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了远程请求地理位置并解析了json数据，完成了hbase的连接池的建立和测试。" />
+    <MESSAGE value="完成商圈标签，完成了hbase的API编写，测试了数据到hbase 的对接。" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成商圈标签，完成了hbase的API编写，测试了数据到hbase 的对接。" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -793,90 +915,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/test/TestExam.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/test/TestJedis.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/exam/TestJson2.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/test/TestOne.scala" />
-    <entry file="jar://D:/Maven/repository-3.5.3-idea/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.jar!/org/apache/http/util/EntityUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HttpUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#28#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/exam/TestExam.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-          <folding>
-            <element signature="e#28#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/one.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/exam/JsonUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/tag/thetrait/Tag.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/MakeAnsUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/Util2Type.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagLoc.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagAppRedis.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-          <folding>
-            <element signature="e#27#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/BigdataDataWarehouse/Spark/jar/spark-assembly-1.6.0-hadoop2.6.0.jar!/org/apache/spark/memory/TaskMemoryManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="229" column="9" lean-forward="true" selection-start-line="229" selection-start-column="9" selection-end-line="229" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Maven/repository-3.5.3-idea/ch/hsr/geohash/1.3.0/geohash-1.3.0.jar!/ch/hsr/geohash/GeoHash.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -935,28 +973,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/etl/Txt2Parquet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-383">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://F:/BigdataDataWarehouse/Spark/jar/spark-assembly-1.6.0-hadoop2.6.0.jar!/org/apache/spark/rdd/SqlNewHadoopRDD.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbcPool.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/JdeisPool.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
-          <folding>
-            <element signature="e#28#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagBusi.scala">
       <provider selected="true" editor-type-id="text-editor">
@@ -968,156 +989,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/graphx/GraphxTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#30#95#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/TagUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/MapUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="21" column="119" selection-start-line="21" selection-start-column="119" selection-end-line="21" selection-end-column="119" />
-          <folding>
-            <element signature="e#28#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagsContext.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HBasePoolUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/DBConnectionPool.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-516">
-          <caret column="8" selection-start-column="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbasePool.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="e#28#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDMLOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2596">
-          <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseScanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDDLOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseNSOperatorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="99" column="9" lean-forward="true" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hbase.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="21" selection-start-line="3" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbasePool.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="16" column="84" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseNsUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="e#38#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDDLUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="e#38#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HBasePoolUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbasePool.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDMLOperator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseOperator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseScanner.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDDLOperator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseNSOperatorUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil.scala" />
     <entry file="file://$PROJECT_DIR$/src/test/scala/TestTagBus.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="418">
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -1125,33 +1007,235 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/TestAllId.scala">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        <state relative-caret-position="352">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/graphx/GraphxTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="72" column="71" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="71" />
           <folding>
-            <element signature="e#0#87#0" expanded="true" />
+            <element signature="e#30#95#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/etl/Txt2Parquet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagLoc.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/terminalequipment/EquipmentSparkCore.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="69" column="59" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/DBConnectionPool.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven/repository-3.5.3-idea/org/apache/hbase/hbase-client/2.0.0/hbase-client-2.0.0.jar!/org/apache/hadoop/hbase/client/Connection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagKey.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/JdeisPool.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+          <folding>
+            <element signature="e#28#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven/repository-3.5.3-idea/org/apache/hbase/hbase-client/2.0.0/hbase-client-2.0.0-sources.jar!/org/apache/hadoop/hbase/client/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="170" column="10" selection-start-line="170" selection-start-column="10" selection-end-line="170" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven/repository-3.5.3-idea/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.jar!/scala/collection/Iterator.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://F:/BigdataDataWarehouse/Spark/jar/spark-assembly-1.6.0-hadoop2.6.0.jar!/org/apache/spark/util/CompletionIterator.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://D:/Maven/repository-3.5.3-idea/org/apache/hbase/hbase-common/2.0.0/hbase-common-2.0.0.jar!/org/apache/hadoop/hbase/TableName.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="280" selection-start-line="280" selection-end-line="280" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven/repository-3.5.3-idea/org/apache/hbase/hbase-client/2.0.0/hbase-client-2.0.0-sources.jar!/org/apache/hadoop/hbase/client/ConnectionImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="340" selection-start-line="340" selection-end-line="340" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven/repository-3.5.3-idea/org/apache/hbase/hbase-client/2.0.0/hbase-client-2.0.0-sources.jar!/org/apache/hadoop/hbase/client/Put.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
+          <folding>
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2015#2016#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven/repository-3.5.3-idea/org/apache/hbase/hbase-client/2.0.0/hbase-client-2.0.0-sources.jar!/org/apache/hadoop/hbase/client/HTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="544" selection-start-line="544" selection-end-line="544" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/app/AppSparkCore.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseNsUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#38#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbasePool.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="69" />
+          <folding>
+            <element signature="e#38#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hbase.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/TestHbase.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        <state relative-caret-position="110">
+          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="26" />
           <folding>
             <element signature="e#0#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/TagUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/MapUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="21" column="119" selection-start-line="21" selection-start-column="119" selection-end-line="21" selection-end-column="119" />
+          <folding>
+            <element signature="e#28#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/Util2Type.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDMLUtil.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="65" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="65" />
+        <state relative-caret-position="198">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding>
             <element signature="e#38#78#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/HbaseTableDDLUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          <folding>
+            <element signature="e#38#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/util/HbaseUtil/Data2HbaseUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="e#38#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/tag/TagsContext.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/TestAllId.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2706">
+          <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/luodesong/tag/thetrait/TagsContext2Hbase.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="131" column="17" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
         </state>
       </provider>
     </entry>

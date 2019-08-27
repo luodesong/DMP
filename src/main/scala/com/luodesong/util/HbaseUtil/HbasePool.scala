@@ -27,8 +27,8 @@ object HbasePool {
     /**
       * 释放连接
       */
-    def reseConnection: Unit ={
-        conn.close()
+    def reseConnection(connection: Connection): Unit ={
+        connection.close()
     }
 
 }

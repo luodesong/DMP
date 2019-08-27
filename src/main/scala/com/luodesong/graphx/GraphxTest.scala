@@ -54,8 +54,15 @@ object GraphxTest {
         val vertices: VertexRDD[VertexId] = graph.connectedComponents().vertices
         //vertices.foreach(println)
 
+        /**
+          * RDD[(VertexId01, (VertexId02, (String, Int)))] :
+          *     VertexId01：原来的点的id
+          *     VertexId02：是最大点的id
+          *     (String, Int)：原始的数据
+          */
         val vertexIdAndMaxpoinAndvalue: RDD[(VertexId, (VertexId, (String, Int)))] = vertices.join(pointRDD)
         //temp.foreach(println)
+
 
         val MaxpoinAndValue: RDD[(VertexId, List[(String, Int)])] = vertexIdAndMaxpoinAndvalue.map {
             case (userId1, (userId2, (name, age))) => {

@@ -1,4 +1,5 @@
-import com.luodesong.tag._
+package com.luodesong.tag
+
 import com.luodesong.util.HbaseUtil.Data2HbaseUtil
 import com.luodesong.util.{JedisPool, TagUtil}
 import org.apache.hadoop.hbase.client.Put
@@ -15,7 +16,7 @@ import redis.clients.jedis.Jedis
 
 import scala.collection.mutable.ListBuffer
 
-class TestAllId {
+class TagsContext2Hbase {
     @Test
     def testOne(): Unit = {
         val conf = new SparkConf()
@@ -127,6 +128,7 @@ class TestAllId {
             (new ImmutableBytesWritable(), put)
         })
 
+        //测试的时候显示
         val ans1 = userIdAndTags.map(t => {
             val put = new Put(Bytes.toBytes(t._1))
             val tags: List[(String, Int)] = t._2
