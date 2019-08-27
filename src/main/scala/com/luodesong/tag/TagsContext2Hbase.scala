@@ -11,14 +11,12 @@ import org.apache.spark.graphx.{Edge, Graph, VertexId, VertexRDD}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, Row, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
-import org.junit.Test
 import redis.clients.jedis.Jedis
 
 import scala.collection.mutable.ListBuffer
 
-class TagsContext2Hbase {
-    @Test
-    def testOne(): Unit = {
+object TagsContext2Hbase {
+    def main(args: Array[String]): Unit = {
         val conf = new SparkConf()
                 .setAppName(this.getClass.getName).setMaster("local[*]")
                 // 处理数据，采取scala的序列化方式，性能比Java默认的高
@@ -142,5 +140,4 @@ class TagsContext2Hbase {
         ans1.foreach(println)
         sc.stop()
     }
-
 }
